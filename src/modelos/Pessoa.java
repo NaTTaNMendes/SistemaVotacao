@@ -15,6 +15,8 @@ public abstract class Pessoa {
 		this.cpf = cpf;
 	}
 
+	public abstract void votar(int numero);
+
 	public String getNome() {
 		return nome;
 	}
@@ -46,4 +48,5 @@ public abstract class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
 }
