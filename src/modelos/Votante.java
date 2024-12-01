@@ -9,7 +9,8 @@ public class Votante extends Pessoa{
 	}
 
 	@Override
-	public void votar(int numero) {
+	public int votar(int numero) {
+		return numero;
 	}
 
 	

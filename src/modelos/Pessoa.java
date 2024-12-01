@@ -15,7 +15,7 @@ public abstract class Pessoa {
 		this.cpf = cpf;
 	}
 
-	public abstract void votar(int numero);
+	public abstract int votar(int numero);
 
 	public String getNome() {
 		return nome;
