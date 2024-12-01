@@ -9,7 +9,8 @@ public class Votante extends Pessoa implements Voto {
 	}
 
 	@Override
-	public void votar(Candidato candidato) {
+	public void votar(int numeroCandidato) {
+		Urna.getInstance().votar(numeroCandidato);
 		
 	}
 	

@@ -1,5 +1,5 @@
 package modelos;
 
 public interface Voto {
-	public void votar(Candidato candidato);
+	public void votar(int numeroCandidato);
 }
