@@ -33,4 +33,21 @@ public class Urna {
 		return this.votos;
 	}
 
+	public Integer calcularGanhador() {
+		if (votos.isEmpty()) {
+			System.out.println("Nenhum candidato foi cadastrado ou nenhum voto foi registrado.");
+		}
+		
+		Integer numeroGanhador = null;
+		int maxVotos = -1;
+		for (Map.Entry<Integer, Integer> entrada : votos.entrySet()) {
+			Integer numeroCandidato = entrada.getKey();
+			Integer quantidadeVotos = entrada.getValue();
+			if (quantidadeVotos > maxVotos) {
+				maxVotos = quantidadeVotos;
+				numeroGanhador = numeroCandidato;
+			}
+		}
+		return numeroGanhador; 
+	}
 }
